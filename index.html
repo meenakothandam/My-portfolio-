@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meena K | Full Stack Java Developer & UI/UX Designer</title>
+<meta name="description" content="Portfolio of Meena K, a Computer Science Engineering student and Java Full Stack Developer skilled in building scalable web applications, debugging, and UI/UX design.">
+<meta name="keywords" content="Meena K, Java Full Stack Developer, UI UX Designer, Frontend Developer, Chennai, React, JavaScript, MySQL">
+<meta name="author" content="Meena K">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Meena K | Full Stack Java Developer & UI/UX Designer">
+<meta property="og:description" content="Computer Science Engineering student building scalable, full-stack web applications with clean, user-centered design.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Meena K | Full Stack Java Developer & UI/UX Designer">
+<meta name="twitter:description" content="Computer Science Engineering student building scalable, full-stack web applications with clean, user-centered design.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>M</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- JSON-LD structured data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Meena K",
+  "jobTitle": "Java Full Stack Developer & UI/UX Designer",
+  "email": "mailto:meenakothandam05@gmail.com",
+  "telephone": "+919345660410",
+  "url": "https://meenak-portfolio.vercel.app",
+  "sameAs": ["https://www.linkedin.com/in/meena-kothandam-8a6913311"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Kelambakkam, Chennai", "addressCountry": "IN" }
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <nav class="nav-container" aria-label="Primary navigation">
+    <a href="#home" class="logo">MK<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark and light mode">
+        <svg id="sunIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg id="moonIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-sm btn-primary">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="grid-overlay"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+  </div>
+  <div class="container hero-inner">
+    <p class="eyebrow reveal">Hello, I&#8217;m</p>
+    <h1 class="hero-title reveal">Meena K</h1>
+    <h2 class="hero-subtitle reveal">
+      <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+    </h2>
+    <p class="hero-tagline reveal">
+      Computer Science Engineering student crafting full-stack web applications &mdash;
+      from clean Figma interfaces to production-ready Java backends.
+      I build things that work, and make sure they look good doing it.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      <a href="mailto:meenakothandam05@gmail.com" class="btn btn-ghost">Email Me</a>
+    </div>
+    <div class="hero-socials reveal">
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.96.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.68-1.29-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.74-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.47.11-3.07 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.6.23 2.78.11 3.07.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16v3.2c0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/meena-kothandam-8a6913311" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
+      </a>
+      <a href="mailto:meenakothandam05@gmail.com" aria-label="Email">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+      </a>
+    </div>
+
+    <div class="hero-profile reveal">
+      <img src="pic.jpeg" alt="Portrait of Meena K" class="hero-image">
+      <div class="hero-profile-copy">
+        <p class="hero-profile-label">Chennai-based Java Full Stack Developer</p>
+        <p>I design responsive web experiences, build clean front-end interfaces, and connect them to reliable Java backends and databases.</p>
+        <div class="hero-profile-footer">
+          <span class="hero-badge">Open to internships</span>
+          <span class="hero-badge">Figma • Java • MySQL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <p class="section-eyebrow">01 &mdash; About</p>
+    <h2 class="section-title">Building software that&#8217;s as thoughtful as it is functional</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I&#8217;m a Computer Science Engineering student at Tagore Engineering College
+          (Anna University), maintaining an <strong>8.89 CGPA</strong> while actively building
+          full-stack projects, competing in hackathons, and presenting research at international
+          conferences.
+        </p>
+        <p>
+          My core strength is Java Full Stack Development &mdash; connecting clean,
+          responsive front-ends to robust backends and relational databases. I pair that
+          with a design-first mindset shaped by tools like Figma and Canva, so the
+          applications I build are not just functional, but genuinely pleasant to use.
+        </p>
+        <p>
+          Recent highlights include developing an AI-based face recognition attendance
+          system, completing a web development internship at Corizo Edutech, and presenting
+          a comparative study on AI chatbot adoption across India and Germany at an
+          international conference.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="8.89">0</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">Projects &amp; Programs</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Languages Spoken</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-card reveal">
+        <div class="code-window">
+          <div class="code-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="code-filename">meena.json</span>
+          </div>
+          <pre class="code-body"><code><span class="tok-key">"name"</span>: <span class="tok-str">"Meena K"</span>,
+<span class="tok-key">"role"</span>: <span class="tok-str">"Full Stack Developer"</span>,
+<span class="tok-key">"based_in"</span>: <span class="tok-str">"Chennai, India"</span>,
+<span class="tok-key">"education"</span>: <span class="tok-str">"B.E. CSE, 2023&ndash;2027"</span>,
+<span class="tok-key">"focus"</span>: [<span class="tok-str">"Java"</span>, <span class="tok-str">"Full Stack"</span>, <span class="tok-str">"UI/UX"</span>],
+<span class="tok-key">"currently"</span>: <span class="tok-str">"open to internships"</span>,
+<span class="tok-key">"coffeeOrChai"</span>: <span class="tok-str">"chai"</span>
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <p class="section-eyebrow">02 &mdash; Skills</p>
+    <h2 class="section-title">Tools &amp; technologies I work with</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3>Languages</h3>
+        <div class="skill-bar"><div class="skill-bar-label"><span>Java</span><span>90%</span></div><div class="bar"><div class="fill" data-width="90"></div></div></div>
+        <div class="skill-bar"><div class="skill-bar-label"><span>JavaScript</span><span>80%</span></div><div class="bar"><div class="fill" data-width="80"></div></div></div>
+        <div class="skill-bar"><div class="skill-bar-label"><span>Python</span><span>75%</span></div><div class="bar"><div class="fill" data-width="75"></div></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Frameworks &amp; Web</h3>
+        <div class="skill-bar"><div class="skill-bar-label"><span>HTML &amp; CSS</span><span>92%</span></div><div class="bar"><div class="fill" data-width="92"></div></div></div>
+        <div class="skill-bar"><div class="skill-bar-label"><span>Bootstrap</span><span>85%</span></div><div class="bar"><div class="fill" data-width="85"></div></div></div>
+        <div class="skill-bar"><div class="skill-bar-label"><span>Java Servlets</span><span>78%</span></div><div class="bar"><div class="fill" data-width="78"></div></div></div>
+        <div class="skill-bar"><div class="skill-bar-label"><span>MySQL</span><span>80%</span></div><div class="bar"><div class="fill" data-width="80"></div></div></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Tools &amp; Platforms</h3>
+        <div class="tag-cloud">
+          <span class="tag">VS Code</span><span class="tag">Eclipse</span><span class="tag">IntelliJ</span>
+          <span class="tag">Figma</span><span class="tag">Canva</span><span class="tag">Git</span><span class="tag">GitHub</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Soft Skills</h3>
+        <div class="tag-cloud">
+          <span class="tag tag-alt">Problem-Solving</span><span class="tag tag-alt">Debugging</span>
+          <span class="tag tag-alt">Team Collaboration</span><span class="tag tag-alt">UI/UX Thinking</span>
+          <span class="tag tag-alt">Research &amp; Presentation</span><span class="tag tag-alt">Time Management</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects">
+  <div class="container">
+    <p class="section-eyebrow">03 &mdash; Projects</p>
+    <h2 class="section-title">Selected work</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-tag">AI / Computer Vision</span>
+          <span class="project-date">Oct 2025</span>
+        </div>
+        <h3>AI-Based Attendance System</h3>
+        <p class="project-problem">
+          <strong>Problem:</strong> Manual attendance tracking is slow and error-prone for
+          large student groups. Built at a college-level hackathon to automate the process.
+        </p>
+        <p class="project-detail">
+          Used computer vision and machine learning to identify students via facial
+          recognition and log attendance in real time, removing manual roll-calls entirely.
+        </p>
+        <div class="project-tech">
+          <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Machine Learning</span>
+        </div>
+        <p class="project-achievement">&#9733; Built &amp; presented as a team within a hackathon time limit</p>
+        <div class="project-links"></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-tag">Full Stack</span>
+          <span class="project-date">Mar 2026</span>
+        </div>
+        <h3>Full-Stack CRUD Application</h3>
+        <p class="project-problem">
+          <strong>Problem:</strong> Needed a reliable, responsive system for managing and
+          tracking records without friction across devices.
+        </p>
+        <p class="project-detail">
+          Designed and built a complete CRUD application with a responsive front-end and
+          a structured backend, optimizing data flow and performance through a clean
+          architecture.
+        </p>
+        <div class="project-tech">
+          <span class="tag">Java</span><span class="tag">MySQL</span><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span>
+        </div>
+        <p class="project-achievement">&#9733; Seamless frontend&ndash;backend integration with optimized workflows</p>
+        <div class="project-links">
+          <a href="https://github.com/meenakothandam/CRUD-application.git" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub &#8599;</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-tag">Web Development</span>
+          <span class="project-date">Mar 2026</span>
+        </div>
+        <h3>Corizo Edutech &mdash; Web App</h3>
+        <p class="project-problem">
+          <strong>Problem:</strong> Internship project required a user-friendly responsive
+          web app built from scratch under real project constraints and deadlines.
+        </p>
+        <p class="project-detail">
+          Designed and developed a responsive web application end-to-end, collaborating
+          on planning, implementation, and testing as part of a structured internship
+          program.
+        </p>
+        <div class="project-tech">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+        <p class="project-achievement">&#9733; Delivered a working app within internship timeline</p>
+        <div class="project-links"></div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-tag">Research</span>
+          <span class="project-date">Apr 2026</span>
+        </div>
+        <h3>AI Chatbots in Customer Communication</h3>
+        <p class="project-problem">
+          <strong>Problem:</strong> Businesses lack clarity on how chatbot adoption differs
+          across cultures &mdash; this research compared India and Germany.
+        </p>
+        <p class="project-detail">
+          Presented a comparative study at an international conference analyzing chatbot
+          adoption trends, user acceptance, and cross-cultural differences in customer
+          expectations.
+        </p>
+        <div class="project-tech">
+          <span class="tag">Research</span><span class="tag">Data Analysis</span><span class="tag">Presentation</span>
+        </div>
+        <p class="project-achievement">&#9733; Presented findings at an international conference</p>
+        <div class="project-links">
+          <a href="#" class="link-btn">Paper &#8599;</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-tag">E-Commerce</span>
+          <span class="project-date">2026</span>
+        </div>
+        <h3>E-Commerce Website</h3>
+        <p class="project-problem">
+          <strong>Problem:</strong> Needed a polished online storefront experience with clear
+          product presentation and a smooth browsing flow for customers.
+        </p>
+        <p class="project-detail">
+          Built a modern e-commerce website project designed to showcase products and give
+          visitors a clean, engaging shopping experience.
+        </p>
+        <div class="project-tech">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+        <p class="project-achievement">&#9733; Added as a featured project link in your portfolio</p>
+        <div class="project-links">
+          <a href="https://github.com/meenakothandam/E-commerce-website.git" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub &#8599;</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section section-alt" id="experience">
+  <div class="container">
+    <p class="section-eyebrow">04 &mdash; Experience</p>
+    <h2 class="section-title">Where I&#8217;ve learned by doing</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">April 2026</span>
+          <h3>Presenter &mdash; International Conference</h3>
+          <p>Presented research on AI chatbots in customer communication, comparing adoption trends and effectiveness across India and Germany.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">March 2026</span>
+          <h3>Web Development Intern &mdash; Corizo Edutech</h3>
+          <p>Built a responsive web application end-to-end, working across the front-end and back-end while collaborating on planning, testing, and debugging.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">March 2026</span>
+          <h3>Mini Project &mdash; Full-Stack CRUD App</h3>
+          <p>Developed a full-stack data management application with complete CRUD functionality and secure database connectivity.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">January 2026</span>
+          <h3>Finalist &mdash; College-Level Ideathon</h3>
+          <p>Advanced to the second stage of evaluation after presenting an original project idea to a panel of judges.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">October 2025</span>
+          <h3>Participant &mdash; College-Level Hackathon</h3>
+          <p>Built an AI-based attendance system using facial recognition, gaining hands-on experience with computer vision in a real-time team setting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION & CERTIFICATIONS ===== -->
+<section class="section" id="education">
+  <div class="container">
+    <p class="section-eyebrow">05 &mdash; Education</p>
+    <h2 class="section-title">Academic background</h2>
+
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <h3>B.E. &mdash; Computer Science &amp; Engineering</h3>
+        <p class="edu-sub">Tagore Engineering College, Anna University &middot; 2023&ndash;2027</p>
+        <p class="edu-score">CGPA: 8.89</p>
+      </div>
+      <div class="edu-card reveal">
+        <h3>HSC &mdash; Mathematics &amp; Biology</h3>
+        <p class="edu-sub">Vivekananda Vidyalaya Mat. Hr. Sec. School, Arakkonam &middot; 2022&ndash;2023</p>
+        <p class="edu-score">Percentage: 81%</p>
+      </div>
+      <div class="edu-card reveal">
+        <h3>SSLC</h3>
+        <p class="edu-sub">St. Xavier&#8217;s Matriculation School, Soganur &middot; 2020&ndash;2021</p>
+      </div>
+    </div>
+
+    <h2 class="section-title section-title-sm">Languages</h2>
+    <div class="lang-grid reveal">
+      <div class="lang-card"><span>English</span><span class="lang-level">Fluent</span></div>
+      <div class="lang-card"><span>Tamil</span><span class="lang-level">Native</span></div>
+      <div class="lang-card"><span>Telugu</span><span class="lang-level">Conversational</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <p class="section-eyebrow">06 &mdash; Contact</p>
+    <h2 class="section-title">Let&#8217;s build something together</h2>
+    <p class="contact-intro reveal">
+      Open to internship and entry-level full-stack opportunities. Reach out directly,
+      or send a message below &mdash; I reply within a day or two.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a href="mailto:meenakothandam05@gmail.com" class="contact-item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+          <span>meenakothandam05@gmail.com</span>
+        </a>
+        <a href="tel:+919345660410" class="contact-item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+91 93456 60410</span>
+        </a>
+        <a href="https://www.linkedin.com/in/meena-kothandam-8a6913311" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
+          <span>linkedin.com/in/meena-kothandam</span>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.96.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.68-1.29-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.74-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.47.11-3.07 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.6.23 2.78.11 3.07.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16v3.2c0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+          <span>github.com/meenak</span>
+        </a>
+        <a href="#" class="contact-item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Kelambakkam, Chennai, India</span>
+        </a>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="hidden" name="_subject" value="Portfolio contact form message">
+        <input type="hidden" name="_replyto" value="">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="What would you like to talk about?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Meena K. Built with care, line by line.</p>
+    <div class="footer-socials">
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+      <a href="https://www.linkedin.com/in/meena-kothandam-8a6913311" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+      <a href="mailto:meenakothandam05@gmail.com" aria-label="Email">Email</a>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
